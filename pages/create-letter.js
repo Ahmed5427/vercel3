@@ -74,7 +74,7 @@ export default function CreateLetter() {
         tone: formData.style
       };
 
-      const response = await fetch('http://128.140.37.194:5000/generate-letter', {
+      const response = await fetch('/api/generate-letter', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
